@@ -1,0 +1,39 @@
+---
+title: Introduction
+description: "Welcome to the Cloudy API documentation"
+---
+
+<img
+  className="block dark:hidden"
+  src="/images/hero-light.png"
+  alt="Hero Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/hero-dark.png"
+  alt="Hero Dark"
+/>
+
+## Welcome to Cloudy API
+
+Cloudy API is a powerful toolkit built to enhance your interaction with Roblox processes, offering seamless internal and external execution, auto-injection, and advanced functionality such as DLL loading and version compatibility checks.
+
+This API is designed for developers building custom tools, launchers, or executors, and integrates deeply with both Roblox and your own apps. It also includes built-in communication with a custom AI backend for real-time feedback and actions.
+
+## Key Features
+
+- 🔁 **Auto-injection** into Roblox processes  
+- 🧠 **Ai.Ask / AskAsync** methods for intelligent scripting support  
+- 🧩 **DLL Loader** support  
+- 📦 **Roblox version checking** and update handling  
+- 👤 **Avatar fetching and player info tools**  
+- 🔐 **Internal execution** via `Api.Internal.inject()` (Admin-only)  
+- 🧪 **External execution** for scripts, modules, and routines  
+
+## Admin Privileges Required
+
+To use certain internal methods like `Api.Internal.inject()`, your project **must** be granted Admin privileges. This allows the API to perform critical tasks like memory writing, process access, and other sensitive operations that are essential for internal injection.
+
+If you don't have Admin access on the target environment, `Api.Internal` methods will not be available and will throw a permission error.
+
+---
