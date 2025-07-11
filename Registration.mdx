@@ -1,0 +1,24 @@
+---
+title: "Registration"
+description: "injection message & co"
+---
+
+<Info>
+  **You can skip that part, if you are only interested in internal Injection**
+</Info>
+
+### Main function setup
+
+make the Api register itself on startup
+
+```csharp
+static myexecutor() {
+	Api.External.RegisterExecutor("your-executor-name");
+}
+```
+
+you can also put that in your Form1_Load() function.
+
+<Tip>
+  This function configures the UserAgent and Injection message to your custom name.
+</Tip>
